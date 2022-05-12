@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+#maim {
+    width: 100%;
+    height: auto;
+}
+
+/* main_visual */
+.main_visual {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 86px;
+}
+
+.main_visual img {
+    width: 100%;
+    height: 100%;
+}
+
+.img01 {
+    display: none;
+}
+
+/* section */
+.section {
+    padding-bottom: 86px;
+    width: 100%;
+    height: auto;
+    border-bottom: 0.5px solid #000;
+}
+
+.inner {
+    text-align: center;
+    max-width: 980px;
+    margin: 100px auto 0 auto;
+}
+
+/* skills */
+.sect_title {
+    margin-bottom: 110px;
+    font-size: 48px;
+    color: #838586;
+}
+
+.skill_list {
+    display: flex;
+    gap: 20px;
+}
+
+.skill_list li {
+    width: calc(100% / 2);
+}
+
+.skill_list li img {
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.skill_list li img:hover {
+    transition: all 0.3s;
+    transform: scale(1.06);
+}
+
+.skill_list h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: normal;
+    font-family: Helvetica, 游ゴシック, "Yu Gothic", YuGothic, HiraKakuProN-W3, メイリオ, Meiryo, sans-serif;
+    color: #292929;
+}
+
+.skill_list p {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Lato, sans-serif;;
+    color: #686868;
+}
+
+/* works */
+#works {
+    padding-bottom: 30px;
+}
+
+.works_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6%;
+}
+
+.works_list_item {
+    width: calc(94% / 2);
+    margin-bottom: 5%;
+    padding-top: 100px;
+    box-shadow: 0 0 8px 0 #000;
+    border-radius: 20px;
+    transition: all 03s;
+    opacity: 0;
+}
+
+
+.works_list_item:hover {
+    transform: scale(1.02);
+    transition: all 0.3s;
+}
+
+.works_list_item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.works_list_item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* アニメーション */
+.works_list_item.fadeIn {
+    opacity: 1;
+    padding: 0;
+    transition: all 0.9s ease;
+}

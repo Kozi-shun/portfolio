@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+/* スマホ */
+@media (max-width: 599px) {
+
+    .inner {
+        margin: 0 14px;
+    }
+    
+    #header {
+        width: 100%;
+        height: auto;
+        margin-bottom: 26px;
+    }
+
+    #header .inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    } 
+
+    /* header_left */
+    .header_left {
+        margin: 0 0 20px 10px;
+        width: 220px;
+        height: 56px;
+    }
+
+    /* site_menu */
+    .site_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .sns_list {
+        display: flex;
+        align-self: flex-end;
+        margin: 0;
+        gap: 5px;
+    }
+
+    .sns_list a {
+        margin: 10px;
+        font-size: 30px;
+        color: #515150;
+    }
+
+    .menu_list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border-bottom: 0.5px solid #000;
+        border-left: 0.5px solid #000;
+    }
+
+    .menu_list li {
+        margin-bottom: 0.1px;
+        width: calc(100% / 2);
+        line-height: 2.5em;
+        text-align: center;
+        border-top: 0.5px solid #000;
+        border-right: 0.5px solid #000;
+    }
+
+    /* main_visual */
+    .main_visual {
+        width: 100%;
+        height: 470px;
+        margin-bottom: 60px;
+    }
+
+    .main_visual img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img02 {
+        display: none;
+    }
+
+    .img01 {
+        display: block;
+    }
+
+    .section {
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .section .inner {
+        margin-top: 50px;
+    }
+
+    /* skills */
+    .sect_title {
+        margin-bottom: 60px;
+        font-size: 36px;
+        color: #838586;
+    }
+
+    .skill_list {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .skill_list li {
+        width: 100%;
+    }
+
+    /* works */
+    .works_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .works_list li {
+        width: 100%;
+        height: 210px;
+        margin: 0;
+        box-shadow: 0 0 8px 0 #000;
+        border-radius: 20px;
+    }
+
+    .works_list li:hover {
+        transform: scale(1.015);
+        transition: all 0.3s;
+    }
+
+    /* about */
+    #about {
+        padding-bottom: 50px;
+        border-top: 0.5px solid #000;
+        border-bottom: 0.5px solid #000;
+    }
+
+    .page_title {
+        text-align: center;
+        padding: 0;
+        margin: 50px 0 60px 0;
+        font-size: 36px;
+        color: #838586;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 0.5px solid #000;
+        font-family: Helvetica, 游ゴシック, "Yu Gothic", YuGothic, HiraKakuProN-W3, メイリオ, Meiryo, sans-serif;
+    }
+
+    dl {
+        display: flex;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    dt {
+        width: 30%;
+    }
+    
+    dd {
+        width: 70%;
+    }
+
+    .massge_container {
+        text-align: left;
+        font-size: 12px;
+    }
+    
+    .massge_container p {
+        line-height: 28px;
+    }
+
+    /* footer */
+    #footer {
+        padding-bottom: 30px;
+    }
+
+    #footer .inner {
+        margin-top: 30px;
+    }
+
+    #footer .site_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* タブレット */
+@media (min-width: 600px) and (max-width: 1030px) {
+    .inner {
+        margin: 90px 15px 0 15px;
+    }
+
+    /* header_left */
+    .header_left {
+        margin-left: 10px;
+    }
+
+    .sect_title {
+        margin-bottom: 65px;
+        font-size: 48px;
+        color: #838586;
+    }
+
+    /* works */
+    .works_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4%;
+    }
+
+    .works_list li {
+        width: calc(96% / 2);
+        box-shadow: 0 0 8px 0 #000;
+        border-radius: 20px;
+    }
+
+    /* about */
+    #about {
+        padding-bottom: 50px;
+        border-top: 1px solid #000;
+        border-bottom: 0.5px solid #000;
+    }
+
+    .page_title {
+        text-align: center;
+        padding: 0;
+        margin: 50px 0 60px 0;
+        font-size: 36px;
+        color: #838586;
+    }
+
+    .container {
+        display: flex;
+        gap: 30px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 0.5px solid #000;
+        font-family: Helvetica, 游ゴシック, "Yu Gothic", YuGothic, HiraKakuProN-W3, メイリオ, Meiryo, sans-serif;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-self: flex-end;
+    }
+
+    dl {
+        display: flex;
+        text-align: left;
+        font-size: 12.5px;
+    }
+
+    dt {
+        width: 32%;
+    }
+    
+    dd {
+        width: 68%;
+    }
+
+    .massge_container {
+        text-align: left;
+        font-size: 13px;
+    }
+    
+    .massge_container p {
+        line-height: 26px;
+    }
+}
